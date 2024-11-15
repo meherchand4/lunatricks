@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Luna's Tricks!</title>
+    <style>
+        div {
+            padding: 5px;
+        }
+
+        #vidElem {
+            width: 600px;
+            height: 600px;        
+        }
+
+        #playButton, #pauseButton, #forwardButton {
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+
+    <script src="luna.js"></script>
+
+</head>
+<body>
+    <h1>Look what Luna can do!</h1>
+
+    <div>
+        <input type="button" value="Play" id="playButton">
+        <input type="button" value="Pause" id="pauseButton">
+        <input type="button" value="Forward" id="forwardButton">
+    </div>
+
+    <p>
+        <label for="trickMenu">Pick a trick!</label>
+        <select id="trickMenu">
+            <option> </option>
+            <option>Sit</option>
+            <option>Paw</option>
+            <option>Down</option>
+            <option>Roll</option>
+        </select>
+            <input type="button" value="Show Trick" id="showButton">
+    </p>
+
+    
+
+    <div class="videoElement">
+        <video id="vidElem" src="lunatricks.mp4">
+        </video>
+    </div>
+</body>
+</html>
